@@ -164,6 +164,9 @@ BG Color
 .bg-color-15 {
 	background: #151515;
 }
+.bg-color-f9 {
+	background: #F9F9F9;
+}
 /*
 =================================
 reuseable component
@@ -191,7 +194,6 @@ reuseable component
 	width: 150px;
 	height: 40px;
 	line-height: 40px;
-	background: #73b21a;
 	text-align: center;
 	border-radius: 30px;
 	color: #FFFFFF;
@@ -249,6 +251,7 @@ start garden section
 }
 .garden-box{
 	transition: .3s;
+	min-height: 272px;
 }
 
 .garden-box:hover{
@@ -260,8 +263,75 @@ start garden section
     bottom: -17px;
     transform: translateX(-50%);
 }
+/*
+=================================
+start lnd section
+==================================
+*/
+.lnd-section{
+	background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/banner2.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; 
+}
+.open-video .play-btn{
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	position: absolute;
+	top:40%;
+	left: 44%;
+}
+.lnd-content p {
+	margin-top: 23px;
+}
+.lnd-content a:hover {
+	background: #73b21a;
+}
+/*
+=================================
+End Lnd section
+==================================
+*/
+/*
+=================================
+Start Service section
+==================================
+*/
+.service-box{
+	padding: 28px 13px;
+}
+.service-box:hover{
+	background: #73b21a;
+}
+.service-box .service-icon span{
+	width: 55px;
+	height: 55px;
+}
+.service-box:hover .service-icon span{
+	background-color: #FFFFFF !important;
+}
+.service-desc hr{
+    opacity: 1;
+	border: 0;
+	border-bottom: 2px dashed #73b21a;
+	background-color: transparent;
+	margin: 3px 0 5px;
+}
+.service-box:hover .service-icon span i{
+	color:#73b21a !important;
+}
+.service-box:hover .service-desc hr{
+	border-color: #FFFFFF;
+}
+.service-box:hover .service-desc p{
+	color: #FFFFFF;
+}
 
-
-
+/*
+=================================
+End Service section
+==================================
+*/
 
 
