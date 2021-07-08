@@ -196,7 +196,15 @@ reuseable component
 .p-w {
   max-width: 700px;
 }
-
+.overlay-2{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(rgba(51, 51, 51, 0.7), rgba(115, 178, 26, 0.7)) ;
+  left: 0;
+  top:0;
+  transform:scale(0);
+}
 .btn-primary {
   width: 150px;
   height: 40px;
@@ -231,7 +239,7 @@ reuseable component
   transition: all .3s ease;
 }
 .transition-linear{
-  transition: all .5s linear;
+  transition: all .4s linear;
 }
 
 /*
@@ -240,13 +248,16 @@ start hero section
 ==================================
 */
 .hero-section {
-  background: linear-gradient(rgba(51, 51, 51, 0.7), rgba(115, 178, 26, 0.7)),
+  background: linear-gradient(rgba(51, 51, 51, 0.8), rgba(115, 178, 26, 0.8)),
     url(../images/banner1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
 }
-
+.hero-img{
+  margin: -2px 0;
+}
 .hero-text a {
   border-radius: 10px;
 }
@@ -305,8 +316,9 @@ start lnd section
   height: 70px;
   line-height: 70px;
   position: absolute;
-  top: 40%;
-  left: 44%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .lnd-content p {
@@ -447,12 +459,128 @@ End meet section
 */
 /*
 =================================
-Start meet section
+Start Gallery section
 ==================================
 */
-
+.gallery-title h2{
+  margin-bottom: 7px;
+  font-style: italic;
+}
+.btn-area{
+  margin-bottom: 44px;
+}
+.gallery-img:hover .gallery-overlay{
+  transform:scale(1);
+}
+.mixitup-control-active{
+  text-decoration: line-through;
+}
 /*
 =================================
-End meet section
+End Gallery section
+==================================
+*/
+/*
+=================================
+Start Slider section
+==================================
+*/
+.slider-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/banner4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slider-content img{
+  width: 90px;
+  height: 90px;
+  border: 5px solid #ffffff;
+}
+.slider-content p:nth-child(2){
+  margin:12px 0 -4px;
+}
+.slider-content p:last-of-type{
+  max-width: 761px;
+  margin-top: 2px;
+}
+
+.swiper-pagination-bullet {
+    width: 17px;
+    height: 17px;
+    background: #ffffff;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  width: 20px;
+  height: 20px;
+  background: #73b21a;
+  opacity: 1;
+}
+/*
+==================================
+End Slider section
+==================================
+*/
+/*
+==================================
+Start News section
+==================================
+*/
+.news-title h2{
+  margin-bottom: 7px;
+  font-style: italic;
+}
+.news-content:hover .news-overlay{
+  transform: scale(1);
+}
+.news-content:hover{
+  box-shadow:rgba(50,50,93,0.25)0px 13px 27px -5px,rgba(0,0,0,0.3)0px 8px 16px -8px;
+}
+.news-img{
+  overflow: hidden;
+}
+.news-img .month{
+  min-width: 135px;
+  height: 35px;
+  position: absolute;
+  left: 0;
+  bottom: -36px;
+  border-top-right-radius: 20px;
+}
+.news-content:hover .month{
+  bottom: 0;
+}
+.news-desc{
+  padding-left: 14px;
+  padding-right: 14px;
+}
+.news-link{
+  padding: 8px 15px;
+}
+.news-link a span:last-child {
+  opacity: 0;
+  visibility: hidden;
+}
+.news-link a:hover{
+  color: #73b21a;
+}
+.news-link a:hover .news-icon{
+  opacity: 1;
+  visibility: visible;
+}
+/*
+==================================
+End News section
+==================================
+*/
+/*
+==================================
+End Slider section
+==================================
+*/
+/*
+==================================
+End Slider section
 ==================================
 */
