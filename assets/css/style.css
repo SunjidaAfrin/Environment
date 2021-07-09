@@ -114,7 +114,9 @@ Font Size
 .font-size-14 {
   font-size: 14px;
 }
-
+.font-size-13 {
+  font-size: 13px;
+}
 /*
 ==================================
 Font Color
@@ -139,7 +141,12 @@ Font Color
 .text-color-97 {
   color: #979797;
 }
-
+.text-color-dd {
+  color: #DDDDDD;
+}
+.text-color-80 {
+  color: #808080;
+}
 /*
 ==================================
 BG Color
@@ -576,11 +583,37 @@ End News section
 */
 /*
 ==================================
-End Slider section
+Start footer section
 ==================================
 */
+.footer{
+
+}
+.footer-content hr{
+  border:0;
+  border-bottom: 1px solid #ffffff;
+}
+.f-social-link li a:hover{
+  color: #73b21a;
+}
+.f-page-link li a i{
+  font-size: 6px;
+  vertical-align: middle;
+}
+.f-page-link li a .dot:hover{
+  color:#73b21a;
+}
+.footer-content .time{
+  border-bottom:1px solid #ffffff;
+}
+.footer-content .time:hover{
+  border-color: #73b21a;
+}
+.footer-content .time:hover .time-text{
+  color: #73b21a;
+}
 /*
 ==================================
-End Slider section
+End footer section
 ==================================
 */
