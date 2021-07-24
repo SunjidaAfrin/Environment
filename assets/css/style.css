@@ -225,7 +225,7 @@ reuseable component
       -ms-transform:scale(0);
           transform:scale(0);
 }
-.btn-primary {
+.btn-primary-s {
   width: 150px;
   height: 40px;
   line-height: 40px;
@@ -234,7 +234,7 @@ reuseable component
   color: #ffffff;
 }
 
-.btn-primary:hover {
+.btn-primary-s:hover {
   background: #4b7017;
 }
 /*
@@ -420,7 +420,11 @@ start hero section
 .hero-text a {
   border-radius: 10px;
 }
-
+.hero-text a:hover {
+  background: #73b21a;
+  color: #ffffff;
+  border: 1px solid white;
+}
 /*
 =================================
 start garden section
