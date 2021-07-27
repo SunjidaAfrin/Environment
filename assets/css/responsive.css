@@ -9,11 +9,9 @@
 
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1399px) {}
     
-}
-
-@media (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
    /*===============
        Header Section
     =================*/
@@ -33,8 +31,14 @@
        Garden Section
     =================*/
     .garden-box {
-        min-height: 320px;
+        min-height: 320px !important;
       }
+     /*===============
+       Service Section
+    =================*/
+    .service-box{
+        min-height: 255px !important;
+    }
       /*===============
        Counter Section
     =================*/
@@ -48,7 +52,7 @@
        font-size: 20px;
     }
 }
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
     /*===============
        Header Start
     =================*/
