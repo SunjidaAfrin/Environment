@@ -92,7 +92,8 @@
     .hero-text h1{
         font-size: 36px;
     }
-   
+   .hero-text p{
+        margin:25px 0}
      /*===============
       Lnd Section
     =================*/
@@ -244,6 +245,12 @@
     }
 }
 @media (max-width: 463px) {
+    /*===============
+     Header Section
+   =================*/
+    .signin-signup li:last-child a {
+    margin-bottom: 5px;
+}
     /*===============
      Lnd Section
    =================*/
